@@ -1,0 +1,19 @@
+# Ignora tutto di default
+*
+
+# Eccezioni: solo configurazioni Hyprland e componenti essenziali
+!hypr/
+!waybar/
+!wofi/
+!kitty/
+!fastfetch/
+
+# Mantieni questo file
+!.gitignore
+
+# All'interno delle cartelle permesse, ignora eventuali file temporanei
+**/.cache/
+**/cache/
+**/*.log
+**/*.tmp
+**/logs/

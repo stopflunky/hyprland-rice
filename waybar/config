@@ -1,0 +1,94 @@
+{
+    "height": 10, // Waybar height (to be removed for auto height)
+    "margin-top": 3,
+    "margin-left": 10,
+    "margin-bottom": 0,
+    "margin-right": 10,
+    "spacing": 5, // Gaps between modules (4px)
+    "modules-left": [ "battery","temperature"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["pulseaudio", "network",  "clock", "custom/power"],
+
+	"hyprland/workspaces": {
+	    	"format": "{icon}",
+	    	"format-icons": {
+	    		"urgent": "",
+	    		"focused": "",
+	    		"active": "",
+	    		"default": ""
+	    	},
+	        "on-click": "activate",
+	    	"on-scroll-up": "hyprctl dispatch workspace r-1",
+	    	"on-scroll-down": "hyprctl dispatch workspace r+1",
+	    },
+
+    
+    "hyprland/window": {
+        "format": "{}"
+    },
+    "tray": {
+        "spacing": 10
+    },
+
+    "clock": {
+    "format": "<span color='#bf616a'> </span>{:%H:%M}",
+    "format-alt": "<span color='#bf616a'> </span>{:%a %b %d}",
+    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+ 
+    "backlight": {
+        "device": "DP-1",
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "on-click": "",
+    },
+    "network": {
+        "format-wifi": "  {signalStrength}%",
+        "format-ethernet": " wired",
+        "format-disconnected": "睊",
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "  {volume}%",
+        "format-bluetooth-muted": "婢 ",
+        "format-muted": "婢",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "bluetoothctl connect FC:58:FA:42:3D:D8"
+    },
+    
+    "battery": {
+      "bat": "BAT0",
+      "adapter": "ADP0",
+      "interval": 60,
+      "states": {
+          "warning": 30,
+          "critical": 15
+      },
+      "on-click": "sh ~/.config/waybar/scripts/power-profiles", 
+      "max-length": 20,
+      "format": "{icon} {capacity}%",
+      "format-warning": "{icon} {capacity}%",
+      "format-critical": "{icon} {capacity}%",
+      "format-charging": "<span font-family='Font Awesome 6 Free'></span> {capacity}%",
+      "format-plugged": "  {capacity}%",
+      "format-alt": "{icon} {time}",
+      "format-full": "  {capacity}%",
+      "format-icons": [" ", " ", " ", " ", " "],
+    },
+    
+    "custom/power": {
+      "format": "⏻",
+      "tooltip": false,
+      "on-click": "~/.config/waybar/scripts/power-menu.sh",
+      "interval": 3600
+    },
+}

@@ -1,0 +1,33 @@
+* {
+    border-radius: 0px;
+    border: none;
+}
+
+window {
+    font-size: 18px;
+    font-family: "JetBrains Mono", "Roboto Mono", monospace;
+    background-color: rgba(28, 28, 28, 0.95); /* CRT dark */
+    color: #fce8c3; /* Beige/ocra */
+}
+
+#entry {
+    padding: 0.35em;
+    color: #fce8c3;
+}
+
+#entry:selected {
+    background-color: #d08770; /* arancio ocra */
+    color: #1c1c1c;
+}
+
+#text:selected {
+    color: #1c1c1c;
+}
+
+#input {
+    background-color: rgba(60, 60, 60, 0.7);
+    color: #fce8c3;
+    border: 1px solid #d08770;
+    padding: 0.3em;
+}
+
