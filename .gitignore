@@ -24,6 +24,9 @@ nautilus/
 *.swp
 *.swo
 
+# Ignora file specifici
+.gsd-keyboard.settings-ported
+
 # Mantieni esplicitamente le cartelle di configurazione utente
 !hypr/
 !waybar/
