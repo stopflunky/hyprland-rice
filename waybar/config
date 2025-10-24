@@ -7,7 +7,7 @@
     "spacing": 5, // Gaps between modules (4px)
     "modules-left": [ "battery","temperature"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["pulseaudio", "network",  "clock", "custom/power"],
+    "modules-right": ["pulseaudio", "network", "clock", "custom/power"],
 
 	"hyprland/workspaces": {
 	    	"format": "{icon}",
@@ -91,4 +91,5 @@
       "on-click": "~/.config/waybar/scripts/power-menu.sh",
       "interval": 3600
     },
+    
 }
