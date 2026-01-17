@@ -6,9 +6,9 @@
     
     "height": 10, // Waybar height (to be removed for auto height)
     "margin-top": 3,
-    "margin-left": 5,
+    "margin-left": 2,
     "margin-bottom": 1,
-    "margin-right": 5,
+    "margin-right": 2,
     "spacing": 5, // Gaps between modules (4px)
     "modules-left": [ "battery","temperature"],
     "modules-center": ["hyprland/workspaces"],
