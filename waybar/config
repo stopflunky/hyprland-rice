@@ -1,9 +1,14 @@
 {
+	"layer": "top",
+	"position":"bottom",
+    "exclusive": false, 
+    "passthrough": false,
+    
     "height": 10, // Waybar height (to be removed for auto height)
     "margin-top": 3,
-    "margin-left": 10,
-    "margin-bottom": 0,
-    "margin-right": 10,
+    "margin-left": 5,
+    "margin-bottom": 1,
+    "margin-right": 5,
     "spacing": 5, // Gaps between modules (4px)
     "modules-left": [ "battery","temperature"],
     "modules-center": ["hyprland/workspaces"],

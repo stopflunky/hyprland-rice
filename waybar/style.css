@@ -1,36 +1,37 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
   font-family: JetBrainsMono Nerd Font;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 900;
   margin: 0;
   padding: 0;
 }
 
 window#waybar {
-  /* background-color: rgba(26, 27, 38, 0.5); */
-  background-color: transparent;
+  background-color: #690024;
+  /*
+  background-color: #7b7a9a;*/
   color: #ffffff;
-  transition-property: background-color;
+
+  opacity: 0.7;
+  transition-property: background-color, opacity;
   transition-duration: 0.5s;
-  /* border-top: 8px transparent; */
-  border-radius: 0px;
-  transition-duration: 0.5s;
+  border-radius: 8px;
   margin: 0px 0px;
 }
 
 window#waybar.hidden {
-  opacity: 0.2;
+  opacity: 0;
 }
 
 #workspaces {
-    padding: 1px 5px;
+    padding: 1px 4px;
     background-color: transparent;
     border-radius: 8px;
 }
 
 #workspaces button {
-    padding: 1px 5px;
+    padding: 1px 2px;
     background-color: transparent;
 }
 /*
@@ -91,14 +92,19 @@ window#waybar.hidden {
   color: #e5e5e5;
   /* color: #bf616a; */
   border-radius: 20px;
-  background-color: #1e1e1e;
+  background-color: transparent;
+  /*
+  to add a little gray in it
+  background-color: #1e1e1e;*/
 }
 
 #window,
 #workspaces {
   border-radius: 20px;
   padding: 0px 10px;
-  background-color: #1e1e1e;
+  
+  /* background-color: #1e1e1e; */
+  background-color: transparent;
 }
 
 #cpu {
